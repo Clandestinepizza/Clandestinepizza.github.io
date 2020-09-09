@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<title>ClandestinePizza</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">QUIENES SOMOS</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACTANOS</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+    <span class="w3-tag w3-xlarge">Estaremos contigo de Jueves a Domigo de 5pm a 10pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">CLANDESTINE<br>PIZZA ARTESANAL</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>CLANDESTINE<br>PIZZA ARTESANAL</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Conoce nuestro menú artesanal</a></p>
+    
+  </div>
+</header>
+
+<!-- Menu Container -->
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+  
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">NUESTRO MENU</h1>    
+   
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Sabores de la casa</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Vegetarianas</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Clásicas</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+
+      <h1><b>PROSCIUTTO</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$23 K</span></h1>
+      <p class="w3-text-grey">Salsa de la casa, queso mozzarella, prosciutto, rugula, tomates secos, mozzarela de bufala y parmesano</p>
+      <hr>
+
+      <h1><b>DE CHORIZO</b><span class="w3-right w3-tag w3-dark-grey w3-round">$23 K</span></h1>
+      <p class="w3-text-grey">Salsa de la casa, queso mozzarella, chorizo argentino, pimentones asados, paprika</p>
+      <hr>
+
+      <h1><b>IL BLUE</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$23 K</span></h1>
+      <p class="w3-text-grey">Salsa de la casa, queso mozzarella, roast beef, cebolla caramelizada, queso roquefort</p>
+
+      <h1><b>ESPINACA </b><span class="w3-tag w3-red w3-round">¡Nueva!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$23 K</span></h1>
+      <p class="w3-text-grey">Salsa de la casa, queso mozzarella, espinaca, tomate cherry, salami con un toque picante, parmesano abundante</p>
+      <hr>
+
+      <h1><b>MADURO </b><span class="w3-tag w3-red w3-round">¡Nueva!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$23 K</span></h1>
+      <p class="w3-text-grey">Salsa de la casa, queso mozzarella, maduro, chicharrón horneado, salsa de hogao</p>
+      <hr>
+
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>MARGARITA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$23 K</span></h1>
+      <p class="w3-text-grey">Salsa de la casa, albahaca fresca, queso mozzarella, queso paipa</p>
+      <hr>
+   
+      <h1><b>FUNGHI</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$23 K</span></h1>
+      <p class="w3-text-grey">Pesto genovese, queso mozzarella, ricotta, selección de hongos, tomates secos</p>
+      <hr>
+      
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      
+      <h1><b>PEPERONI</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$ 23 K</span></h1>
+      <p class="w3-text-grey">Salsa de la casa, queso mozzarella, peperoni, aceitunas</p>
+      <hr>
+       <h1><b>ALOHA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$ 23 K</span></h1>
+      <p class="w3-text-grey">Salsa de la casa, queso mozzarella, jamón ahumado y piña asada</p>
+      <hr>
+		<h1><b>MIEL MOSTAZA</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$ 23 K </span></h1>
+      <p class="w3-text-grey">Salsa de la casa, queso mozzarella, duxelle de hongos, pollo en salas miel mostaza y especias</p>
+      <hr>      
+      
+  </div>
+</div>
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px"QUIENES SOMOS</h1>
+    <p>Somos la nueva opción en comida rápida pero con el toque saludable, nuestras pizzas contienen ingredientes seleccionados que hacen que nuestro sabor sea diferente e inigualable. Cada bocado será una experiencia de sabor para tus pailas gustativas.</p>
+    <p><strong>Somos diferentes a los demás, nuestras pizzas no tiene comparación</strong></p> 
+    <p>Pruebalas y disfruta de un nuevo sabor <img src="/w3images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
+    <p>Pizza de calidad a un bajo costo .</p>
+    <img src="/w3images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
+    <h1><b>Horario de atención</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p>Lunes a miércoles - Cerrados</p>
+        <p>Jueves a domingo</p>
+        <p>Festivos</p>
+      </div>
+      <div class="w3-col s6">
+        <p>Cerrados</p>
+        <p>5:00 pm a 10:00 pm</p>
+        <p>5:00 pm a 10:00 pm</p>
+      </div>
+    </div>
+    <p>Si necesitas un pedido en un horario diferente no dudes en contactarnos que con gusto te atenderemos.
+    </p>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;" id="myMap">
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contactanos</h1>
+    <p>Realizamos domicilios en el sector occidental de la calle 80 o de acuerdo a tu pedido podemos llevarlo a donde estes.</p>
+    <p><span class="w3-tag">!</span> Visitanos en nuestras redes sociales.</p>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
